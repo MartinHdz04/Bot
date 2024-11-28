@@ -2,10 +2,10 @@
   key: {
     remoteJid: '573153640055@s.whatsapp.net',
     fromMe: false,
-    id: 'D026385481DB38484E103838E16D2D95',
+    id: '1AB5B9407CE7FAD5052C77BA302624AA',
     participant: undefined
   },
-  messageTimestamp: 1732651114,
+  messageTimestamp: 1732653825,
   pushName: '- Martin',
   broadcast: false,
   message: Message {
@@ -20,12 +20,12 @@
   from: '573153640055'
 }
 [QUEUE_SE_ENVIO]:  {
-  ref: 'ans_1a70183a-58e5-4589-9bb1-2f0861c6e843',
-  keyword: 'key_1da85d52-3088-48e3-83ad-1c9b56f698c6',
-  answer: 'Que mas',
+  ref: 'ans_61c98b65-f513-4f58-b594-a9b6cbb83a57',
+  keyword: 'key_46f4bd7f-7e10-4f47-a76d-6a6c34b531b2',
+  answer: 'Que mas\n-Opción 1\n-Opción 2\n-Opción 3',
   options: {
     media: null,
-    buttons: [ [Object], [Object], [Object] ],
+    buttons: [],
     capture: false,
     child: null,
     delay: 0,
@@ -35,5 +35,5 @@
     keyword: {},
     callback: false
   },
-  refSerialize: 'fb9b91deaff36a9f0f88c8f830603ecb'
+  refSerialize: 'b3e7dce5a728619bdfc460fdb6246cdc'
 }
