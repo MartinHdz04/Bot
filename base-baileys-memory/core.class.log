@@ -2,10 +2,10 @@
   key: {
     remoteJid: '573153640055@s.whatsapp.net',
     fromMe: false,
-    id: '1AB5B9407CE7FAD5052C77BA302624AA',
+    id: 'C96C848258DD10A9D914C1B94ED6D449',
     participant: undefined
   },
-  messageTimestamp: 1732653825,
+  messageTimestamp: 1732763516,
   pushName: '- Martin',
   broadcast: false,
   message: Message {
@@ -20,20 +20,41 @@
   from: '573153640055'
 }
 [QUEUE_SE_ENVIO]:  {
-  ref: 'ans_61c98b65-f513-4f58-b594-a9b6cbb83a57',
-  keyword: 'key_46f4bd7f-7e10-4f47-a76d-6a6c34b531b2',
-  answer: 'Que mas\n-Opción 1\n-Opción 2\n-Opción 3',
+  ref: 'ans_b7a4ff2e-9f3b-46c8-9ee8-1a66c045b765',
+  keyword: 'key_9e608cb0-4ae9-4c37-85ef-a1f8db543220',
+  answer: 'Bienvenido\n-Opción 1\n-Opción 2\n-Opción 3',
   options: {
     media: null,
     buttons: [],
-    capture: false,
+    capture: true,
     child: null,
     delay: 0,
     idle: null,
     ref: null,
     nested: [],
     keyword: {},
-    callback: false
+    callback: true
   },
-  refSerialize: 'b3e7dce5a728619bdfc460fdb6246cdc'
+  refSerialize: 'e695ed7b3782c63afdd7a68541cb152d'
+}
+[handleMsg]:  {
+  key: {
+    remoteJid: '573153640055@s.whatsapp.net',
+    fromMe: false,
+    id: 'EB1DA0F7BF38A2C2A1B0F598F0ACECBD',
+    participant: undefined
+  },
+  messageTimestamp: 1732763538,
+  pushName: '- Martin',
+  broadcast: false,
+  message: Message {
+    conversation: ';hshshsu;2024-11-28',
+    messageContextInfo: MessageContextInfo {
+      deviceListMetadata: [DeviceListMetadata],
+      deviceListMetadataVersion: 2,
+      messageSecret: [Uint8Array]
+    }
+  },
+  body: ';hshshsu;2024-11-28',
+  from: '573153640055'
 }

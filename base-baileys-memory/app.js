@@ -3,14 +3,31 @@ const { createBot, createProvider, createFlow, addKeyword } = require('@bot-what
 const QRPortalWeb = require('@bot-whatsapp/portal')
 const BaileysProvider = require('@bot-whatsapp/provider/baileys')
 const MockAdapter = require('@bot-whatsapp/database/mock')
+const db = require('./database.js'); // Importar la lógica de la base de datos
 
 const flowPrincipal = addKeyword(['Hola', 'inicio', 'empezar', 'hi', 'ole']).addAnswer(
     [
-        "Que mas", 
+        "Bienvenido", 
         "-Opción 1",
         "-Opción 2",
         "-Opción 3"
-    ]
+    ],
+    {capture:true},
+    (ctx, {fallback})=>{
+        const numero = ctx.from;
+        const [, tarea, fecha] = ctx.body.split(';'); // Separar por ";"
+        
+        db.addTask(numero, tarea.trim(), fecha.trim(), (err) => {
+            if (err) {
+                return(fallback)
+            } else {
+                console.log(`Tarea registrada: "${tarea.trim()}" para la fecha: ${fecha.trim()}`);
+            }
+        });
+       
+
+        console.log(ctx)
+    }
 )
 
 const main = async () => {
